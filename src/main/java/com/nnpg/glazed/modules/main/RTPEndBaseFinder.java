@@ -300,7 +300,7 @@ public class RTPEndBaseFinder extends Module {
                     new DisconnectS2CPacket(Text.literal("END STASH FOUND AT " + chunk.x + ", " + chunk.z + "!"))
                 );
             }
-        }, 1, TimeUnit.SECONDS);
+        }, 9, TimeUnit.SECONDS);
     }
 
     private void sendWebhookNotification(EndStashChunk chunk, boolean isCriticalSpawner, String detectionReason) {
